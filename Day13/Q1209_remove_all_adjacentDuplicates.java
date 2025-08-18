@@ -1,3 +1,26 @@
+import java.util.Stack;
+
+class Pair<K, V> {
+    private K key;
+    private V value;
+
+    public Pair(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public K getKey() {
+        return key;
+    }
+
+    public V getValue() {
+        return value;
+    }
+
+    public void setValue(V value) {
+        this.value = value;
+    }
+}
 
 class Q1209_remove_all_adjacentDuplicates {
     public String removeDuplicates(String s, int k) {
